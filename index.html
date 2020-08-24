@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><b><u> BASIC CALCULATOR</u> </b></h1> <hr>
+    <div class="calc">
+        <div class="outscreen">
+            <input type="text" name="outsc" id="screen">
+        </div>
+
+        <div class="inputs"><br>
+            
+            <button class="operator" id="special" onclick="clearall()">AC</button>
+            <button class="operator" id="back" onclick="back()">C</button>
+            <button class="operator" onclick="send('/')">&#247</button>
+
+            <button class="numbers" onclick="send('7')">7</button>
+            <button class="numbers" onclick="send('8')">8</button>
+            <button class="numbers" onclick="send('9')">9</button>
+            <button class="operator" onclick="send('*')">&times;</button>
+
+            <button class="numbers" onclick="send('4')">4</button>
+            <button class="numbers" onclick="send('5')">5</button>       
+            <button class="numbers" onclick="send('6')">6</button>
+            <button class="operator" onclick="send('-')">-</button>
+
+            <button class="numbers" onclick="send('1')">1</button>
+            <button class="numbers" onclick="send('2')">2</button>
+            <button class="numbers" onclick="send('3')">3</button>
+            <button class="operator" id="plus" onclick="send('+')">+</button>
+
+            <button class="numbers" onclick="send('0')">0</button>
+            <button class="numbers" onclick="send('.')">.</button>
+            <button class="operator" id="sspecial" onclick=" solve() "> = </button>
+                    
+        </div>
+    </div>
+    <hr>
+<script src="app.js"></script>
+</body>
+</html>
